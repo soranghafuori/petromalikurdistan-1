@@ -1,0 +1,33 @@
+.header{
+    background-color: rgba(24, 24, 24, 0.1);
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    padding: 1rem;
+    font-family:sarchia;
+}
+.header-left button{
+    border: none;
+    background-color:#fff ;
+    color: rgb(126, 87, 194);
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.header-left-icon{
+    font-size: 1.7rem;
+}
+.header-main a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-size: 1.3rem;
+}
+.header-main a:hover{
+    color: rgb(126, 87, 194);
+    transition: .3s;
+}
