@@ -1,5 +1,5 @@
 .header{
-    background-color: rgba(24, 24, 24, 0.1);
+    background-color: rgba(24, 24, 24, 0.952);
     display: flex;
     flex-direction:row-reverse;
     justify-content: space-between;
@@ -8,11 +8,12 @@
     width: 100vw;
     padding: 1rem;
     font-family:sarchia;
+    box-shadow: # 10px 10px 10px;
 }
 .header-left button{
     border: none;
     background-color:#fff ;
-    color: rgb(126, 87, 194);
+    color: #CF4E1F;
     font-size: 1.2rem;
     padding: .5rem;
     border-radius: 30px;
@@ -23,11 +24,11 @@
 }
 .header-main a{
     text-decoration: none;
-    color: black;
+    color: white;
     margin-right: 20px;
     font-size: 1.3rem;
 }
 .header-main a:hover{
-    color: rgb(126, 87, 194);
+    color:#CF4E1F;
     transition: .3s;
 }

@@ -1,11 +1,18 @@
 .main-page{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:sarchia;
+}
+.main-page1{
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
-    font-family:sarchia;
 }
 .main-page-left{
     width: 50%;
@@ -27,14 +34,32 @@
     border: none;
     padding: 10px;
     border-radius: 1rem;
-    color: rgb(126, 87, 194);
+    color: #CF4E1F;
     font-size: 1.3rem;
     margin-left: 1rem;
 }
 .main-page-left-button button:first-child{
-    background-color: rgb(126, 87, 194);
+    background-color: #CF4E1F;
     color: white;
 }
 .main-page-right{
     width: 50%;
+
+}
+.main-page-right-svg{
+    width: 100%;
+    
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.main-page2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .main-page2-left{
+    width: 50%;
+} */
+.main-page2-right{
+    /* width: 100%; */
 }
