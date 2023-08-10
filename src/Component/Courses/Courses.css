@@ -1,0 +1,34 @@
+.courses{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F5F7;
+}
+.courses-box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.courses-box-left{
+    width: 35%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-right: 1rem;
+}
+.courses-box-right{
+    width: 100%;
+    display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top:5rem ;
+}
+.qwer{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    padding: 30px;
+    margin: 30px;
+}

@@ -1,5 +1,5 @@
 .header{
-    background-color: rgba(24, 24, 24, 0.699);
+    background-color: rgba(112, 112, 112, 0.699);
     display: flex;
     flex-direction:row-reverse;
     justify-content: space-between;
@@ -8,8 +8,10 @@
     width: 100vw;
     padding: 1rem;
     font-family:sarchia;
+    backdrop-filter: blur(5px);
+    
 }
-.header-left button{
+.header-left>button{
     border: none;
     background-color:#fff ;
     color: #CF4E1F;
@@ -17,6 +19,7 @@
     padding: .5rem;
     border-radius: 30px;
     margin-right: 20px;
+    z-index: 2;
 }
 .header-left-icon{
     font-size: 1.7rem;
