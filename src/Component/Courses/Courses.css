@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: #F4F5F7;
+    padding-top: 40px;
 }
 .courses-box{
     display: flex;
@@ -24,11 +25,4 @@
     display: grid;
   grid-template-columns: auto auto auto;
   margin-top:5rem ;
-}
-.qwer{
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-    padding: 30px;
-    margin: 30px;
 }

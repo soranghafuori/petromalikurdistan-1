@@ -9,7 +9,7 @@
     padding: 1rem;
     font-family:sarchia;
     backdrop-filter: blur(5px);
-    
+    z-index: 10;
 }
 .header-left>button{
     border: none;

@@ -8,8 +8,14 @@ import { FiUsers } from "react-icons/fi";
 import { BsPersonVideo3 } from "react-icons/bs";
 import { LiaLanguageSolid } from "react-icons/lia";
 import { MdOutlineSupportAgent } from "react-icons/md";
+import CourseCard from "../CourseCard/CourseCard";
+import { GiOilPump } from "react-icons/gi";
+import { NavLink } from 'react-router-dom'
 
 export default function Main() {
+  const courses = [{ icon: <GiOilPump/>, title: "کۆرسی هەڵکۆڵین", time: "٢٤:٣٥:٠٠", price: "٩٩٠٠٠" },
+    { icon: <GiOilPump/>, title: "کۆرسی هەڵکۆڵین", time: "٢٤:٣٥:٠٠", price: "٩٩٠٠٠" },
+    { icon: <GiOilPump/>, title: "کۆرسی هەڵکۆڵین", time: "٢٤:٣٥:٠٠", price: "٩٩٠٠٠" }];
   return (
     <div className="main-page">
       <div className="main-page1">
@@ -1048,53 +1054,13 @@ export default function Main() {
         <div className="main-page2-box-right">
           <h1>نوێترین کۆرسەکان</h1>
           <h4>فێرکاری ببینه ، فێرببه ، ببه ئەندازیاری نەوت </h4>
-          <Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}}>هەموویان ببینه </Button>
+          <NavLink to="/courses"><Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}} >هەموویان ببینه </Button></NavLink>
+          
           </div>
           <div className="main-page2-box-left">
-          <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+          {courses.map((course)=>(
+            <CourseCard icon={course.icon} title={course.title} time={course.time} price={course.price}/>
+          ))}
         </div>
         </div>
 
@@ -1155,6 +1121,7 @@ export default function Main() {
         <div className="main-page2-box-right">
           <h1>نوێترین مژاری قسەکردن</h1>
           <h4>پرسیارەکانت لێره بکه <br/> پرسیار و وڵامەکانی پێشوو لێره ببینه <br/> یارمەتی کوردێک بده و جوابی پرسیارەکانی بدەوە</h4>
+          
           <Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}}>هەموویان ببینه </Button>
           </div>
           <div className="main-page2-box-left">
@@ -1169,7 +1136,8 @@ export default function Main() {
         <div className="main-page2-box-right">
           <h1>ئەندازیارانی نەوت</h1>
           <h4>ئەندازیارانی کورد لێره ببینه<br/> زانیاری زیاتر بەدەست بێنه له کۆمپانیا نەوتییەکان<br/></h4>
-          <Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}}>هەموویان ببینه </Button>
+          <NavLink to="/users"><Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}}>هەموویان ببینه </Button></NavLink>
+          
           </div>
           <div className="main-page2-box-left">
           <div className="main-page2-box-left-box"></div>
