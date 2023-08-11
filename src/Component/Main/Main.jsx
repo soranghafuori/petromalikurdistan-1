@@ -11,11 +11,17 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 import CourseCard from "../CourseCard/CourseCard";
 import { GiOilPump } from "react-icons/gi";
 import { NavLink } from 'react-router-dom'
+import BookCard from '../BookCard/BookCard'
+import User from "../User/User";
 
 export default function Main() {
   const courses = [{ icon: <GiOilPump/>, title: "کۆرسی هەڵکۆڵین", time: "٢٤:٣٥:٠٠", price: "٩٩٠٠٠" },
     { icon: <GiOilPump/>, title: "کۆرسی هەڵکۆڵین", time: "٢٤:٣٥:٠٠", price: "٩٩٠٠٠" },
     { icon: <GiOilPump/>, title: "کۆرسی هەڵکۆڵین", time: "٢٤:٣٥:٠٠", price: "٩٩٠٠٠" }];
+
+    const books=[{urlImg:'/z.jpg' , title:'petroMk'},{urlImg:'/c.jpg' , title:'petroMk'},{urlImg:'/v.jpg' , title:'petroMk'}];
+    const users=[{name:'سۆران غەفووری' , job:'ئەندازیاری نەوت' , witness:'ماستەری نەوتی زانکۆی تاران' ,honors:'نووسەری کتێبی نەوت لە کوێوە هاتوووه ' , now:'دامەزراوی پاڵاوگەی تیشک'}, 
+    {name:'سۆران غەفووری' , job:'ئەندازیاری نەوت' , witness:'ماستەری نەوتی زانکۆی تاران' ,honors:'نووسەری کتێبی نەوت لە کوێوە هاتوووه ' , now:'دامەزراوی پاڵاوگەی تیشک'}, ];
   return (
     <div className="main-page">
       <div className="main-page1">
@@ -1119,15 +1125,15 @@ export default function Main() {
       <div className="main-page2">
         <div className="main-page2-box">
         <div className="main-page2-box-right">
-          <h1>نوێترین مژاری قسەکردن</h1>
-          <h4>پرسیارەکانت لێره بکه <br/> پرسیار و وڵامەکانی پێشوو لێره ببینه <br/> یارمەتی کوردێک بده و جوابی پرسیارەکانی بدەوە</h4>
+          <h1>نوێترین کتێبەکان</h1>
+          <h4>هەموو کتێبە کوردیەکان<br/> هەموو کتێبە ئینگلیزیەکان<br/></h4>
           
           <Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}}>هەموویان ببینه </Button>
           </div>
           <div className="main-page2-box-left">
-          <div className="main-page2-box-left-box"></div>
-          <div className="main-page2-box-left-box"></div>
-          <div className="main-page2-box-left-box"></div>
+          {books.map((book)=>(
+            <BookCard url={book.urlImg} title={book.title}/>
+          ))}
         </div>
         </div>
         </div>
@@ -1140,9 +1146,9 @@ export default function Main() {
           
           </div>
           <div className="main-page2-box-left">
-          <div className="main-page2-box-left-box"></div>
-          <div className="main-page2-box-left-box"></div>
-          <div className="main-page2-box-left-box"></div>
+          {users.map((user)=>(
+            <User name={user.name} job={user.name}  witness={user.witness} honors={user.honors} now={user.now}/>
+          ))}
         </div>
         </div>
         </div>
