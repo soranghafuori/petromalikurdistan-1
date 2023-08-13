@@ -32,8 +32,10 @@ export default function Main() {
             دامەزراندن و پرسیار و وڵام{" "}
           </p>
           <div className="main-page-left-button">
-            <button>کۆرسەکان</button>
-            <button>پەرتووکەکان</button>
+            <NavLink to="/courses"><button>کۆرسەکان</button></NavLink>
+            <NavLink to="/books"><button style={{backgroundColor:'#fff' , color:'#CF4E1F'}}>پەرتووکەکان</button></NavLink>
+            
+            
           </div>
         </div>
         <div className="main-page-right">
@@ -1031,27 +1033,27 @@ export default function Main() {
         <div>
           <div>
             <BiDollarCircle className="main-page1-boxlogo-logoo" />
-          </div>
+          </div><p>نرخێکی گونجاو</p>
         </div>
         <div>
           <div>
             <FiUsers className="main-page1-boxlogo-logoo" />
-          </div>
+          </div><p>پرسیار لە نێوان ئەندامان</p>
         </div>
         <div>
           <div>
             <BsPersonVideo3 className="main-page1-boxlogo-logoo" />
-          </div>
+          </div><p>باشترین مامۆستایان</p>
         </div>
         <div>
           <div>
             <LiaLanguageSolid className="main-page1-boxlogo-logoo" />
-          </div>
+          </div><p>بە زمانی کوردی</p>
         </div>
         <div>
           <div>
             <MdOutlineSupportAgent className="main-page1-boxlogo-logoo" />
-          </div>
+          </div><p>یارمەتی دانی ٢٤ کاتژمێر</p>
         </div>
       </div>
 

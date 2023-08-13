@@ -67,13 +67,22 @@
     justify-content: space-around;
     
 }
+.main-page1-boxlogo-logo p{
+    margin-top: 1.5rem;
+}
 .main-page1-boxlogo-logo>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     padding: 3rem;
     border-radius: 10px;
+    text-align: center;
 }
 .main-page1-boxlogo-logo>div:hover{
     background-color: #fff;
     transition: .1s;
+    
 }
 .main-page1-boxlogo-logo>div>div{
     width: 6rem;

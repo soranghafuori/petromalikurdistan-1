@@ -6,17 +6,18 @@
     align-items: center;
     position: fixed;
     width: 100vw;
+    height: 4rem;
     padding: 1rem;
     font-family:sarchia;
     backdrop-filter: blur(5px);
     z-index: 10;
 }
-.header-left>button{
+.header-left button{
     border: none;
     background-color:#fff ;
     color: #CF4E1F;
-    font-size: 1.2rem;
-    padding: .5rem;
+    font-size: 1rem;
+    padding: .5rem 1rem;
     border-radius: 30px;
     margin-right: 20px;
     z-index: 2;
