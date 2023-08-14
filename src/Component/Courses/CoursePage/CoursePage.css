@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding-top: 7rem;
 }
 .coursepage-intro{
@@ -62,4 +63,16 @@ width: 8rem;
 .coursepage-intro-left>video{
     width: 90%;
     border-radius: 1rem;
+}
+
+/* //////////////////////////// */
+
+.coursepage-des{
+    width: 90%;
+}
+.coursepage-des-text{
+    margin-top: 5rem;
+}
+.coursepage-des-text>p{
+    font-size: 1.1rem;
 }
