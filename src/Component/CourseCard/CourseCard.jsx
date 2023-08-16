@@ -1,12 +1,13 @@
 import React from "react";
 import "./CourseCard.css";
 import  Button  from "react-bootstrap/Button";
-
+import { NavLink } from "react-router-dom";
 
 export default function CourseCard({icon , title , time , price}) {
     
   return (
-    <div className="cours-box">
+    
+      <div className="cours-box">
       <div className="cours-box-img">
         {icon}
         <h1>{title}</h1>
@@ -14,7 +15,8 @@ export default function CourseCard({icon , title , time , price}) {
       <div className="cours-box-title">
         <h1>{title}</h1>
         <p>{time}</p>
-        <p>بینینی زانیاری زۆرتر</p>
+        <NavLink to='/courses/drilling'><p>بینینی زانیاری زۆرتر</p></NavLink>
+        
         <hr />
         <div>
           <Button
@@ -33,5 +35,7 @@ export default function CourseCard({icon , title , time , price}) {
         </div>
       </div>
     </div>
+    
+    
   );
 }

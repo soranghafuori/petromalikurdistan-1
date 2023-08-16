@@ -53,3 +53,7 @@
 .cours-box-title-price>p{
     margin: 2px 2px 10px;
 }
+.cours-box-title a{
+    color: black;
+    text-decoration: none;
+}
