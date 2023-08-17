@@ -1129,8 +1129,8 @@ export default function Main() {
         <div className="main-page2-box-right">
           <h1>نوێترین کتێبەکان</h1>
           <h4>هەموو کتێبە کوردیەکان<br/> هەموو کتێبە ئینگلیزیەکان<br/></h4>
+          <NavLink to="/books"><Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}}>هەموویان ببینه </Button></NavLink>
           
-          <Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}}>هەموویان ببینه </Button>
           </div>
           <div className="main-page2-box-left">
           {books.map((book)=>(
