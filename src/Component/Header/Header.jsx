@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="header">
+    <div className="header show-header">
       <div className="header-left">
         <NavLink to='/login'>
           <button>
