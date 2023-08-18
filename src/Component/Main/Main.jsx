@@ -1060,8 +1060,9 @@ export default function Main() {
       <div className="main-page2">
         <div className="main-page2-box">
         <div className="main-page2-box-right">
-          <h1>نوێترین کۆرسەکان</h1>
-          <h4>فێرکاری ببینه ، فێرببه ، ببه ئەندازیاری نەوت </h4>
+          <div><h1>نوێترین کۆرسەکان</h1>
+          <h4>فێرکاری ببینه ، فێرببه ، ببه ئەندازیاری نەوت </h4></div>
+          
           <NavLink to="/courses"><Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}} >هەموویان ببینه </Button></NavLink>
           
           </div>
@@ -1127,8 +1128,9 @@ export default function Main() {
       <div className="main-page2">
         <div className="main-page2-box">
         <div className="main-page2-box-right">
-          <h1>نوێترین کتێبەکان</h1>
-          <h4>هەموو کتێبە کوردیەکان<br/> هەموو کتێبە ئینگلیزیەکان<br/></h4>
+          <div><h1>نوێترین کتێبەکان</h1>
+          <h4>هەموو کتێبە کوردیەکان<br/> هەموو کتێبە ئینگلیزیەکان<br/></h4></div>
+          
           <NavLink to="/books"><Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}}>هەموویان ببینه </Button></NavLink>
           
           </div>
@@ -1142,8 +1144,9 @@ export default function Main() {
         <div className="main-page2">
         <div className="main-page2-box">
         <div className="main-page2-box-right">
-          <h1>ئەندازیارانی نەوت</h1>
-          <h4>ئەندازیارانی کورد لێره ببینه<br/> زانیاری زیاتر بەدەست بێنه له کۆمپانیا نەوتییەکان<br/></h4>
+          <div><h1>ئەندازیارانی نەوت</h1>
+          <h4>ئەندازیارانی کورد لێره ببینه<br/> زانیاری زیاتر بەدەست بێنه له کۆمپانیا نەوتییەکان<br/></h4></div>
+          
           <NavLink to="/users"><Button style={{color:'',background:'#CF4E1F',border:'none',fontSize:'20px'}}>هەموویان ببینه </Button></NavLink>
           
           </div>

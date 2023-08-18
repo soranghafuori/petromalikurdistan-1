@@ -154,3 +154,45 @@
     background-color: #CF4E1F;
     margin: 40px;
 }
+
+
+
+/* //////////////////////////////////////////////// */
+
+@media (max-width:1000px){
+    .main-page1{
+        
+        flex-direction: column;
+        
+    }
+    .main-page-left{
+        width: 100%;
+        text-align: center;
+    }
+    .main-page-right{
+        margin-top:7rem ;
+        width: 80%;
+    }
+    .main-page1-boxlogo-logo{
+        display: grid;
+        grid-column: auto;
+        grid-row:auto;
+    }
+    .main-page1-boxlogo-logo>div{
+        padding: 1rem;
+    }
+    .main-page1-boxlogo-logo>div>div{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
+    }
+
+
+    .main-page2-box{
+        flex-direction: column;
+    }
+    .main-page2-box-right{
+        flex-direction: row;
+        width: 100%;
+    }
+}
