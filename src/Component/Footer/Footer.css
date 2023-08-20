@@ -28,3 +28,18 @@
     text-decoration: none;
     color: #CF4E1F;
 }
+
+@media(max-width:1000px){
+    .footer>div{
+        flex-direction: column;
+    }
+    .footer-text{
+        text-align: center;
+        width: 100%;
+        margin-left: 5rem;
+    }
+    .footer-part{
+        width: 100%;
+        text-align: center;
+    }
+}
