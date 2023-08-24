@@ -65,3 +65,16 @@
 .show{
     display: none;
 }
+
+@media(max-width:1000px){
+    .login-box{
+        width: 90%;
+        height: 90%;
+        margin-top: .1rem;
+        flex-direction: column;
+    }
+    .login-left{
+        padding-top: 0;
+        width: 70%;
+    }
+}
