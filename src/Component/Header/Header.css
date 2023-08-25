@@ -1,4 +1,7 @@
 @media (min-width: 1000px) {
+  .header-close{
+    display: none;
+  }
   .header {
     background-color: rgba(112, 112, 112, 0.699);
     display: flex;
@@ -57,7 +60,7 @@
       
     }
     .show-header{
-       animation: showHeader 2s;
+       animation: showHeader .5s;
        left: 0;
     }
     @keyframes showHeader {
@@ -102,5 +105,12 @@
     .header-main a:hover {
       color: #cf4e1f;
       transition: 0.3s;
+    }
+    .header-close{
+      display: block;
+      position: fixed;
+      top: 1rem;
+      font-size: 2rem;
+      right: 1rem;
     }
 }

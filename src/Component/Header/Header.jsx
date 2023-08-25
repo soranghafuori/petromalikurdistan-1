@@ -3,10 +3,14 @@ import "./Header.css";
 import { TbLogin } from "react-icons/tb";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+import {IoCloseSharp} from 'react-icons/io5'
 
 export default function Header() {
+  function hidehefer(){
+    document.getElementById('header').classList.toggle('show-header')
+  }
   return (
-    <div className="header show-header">
+    <div className="header " id="header">
       <div className="header-left">
         <NavLink to='/login'>
           <button>
@@ -38,6 +42,7 @@ export default function Header() {
         </NavLink>
       </div>
       <div className="header-right">لۆگۆ</div>
+      <IoCloseSharp onClick={()=>hidehefer()} className="header-close"/>
     </div>
   );
 }

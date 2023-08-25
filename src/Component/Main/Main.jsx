@@ -13,17 +13,24 @@ import { GiOilPump } from "react-icons/gi";
 import { NavLink } from 'react-router-dom'
 import BookCard from '../BookCard/BookCard'
 import User from "../User/User";
+import {FiMenu} from 'react-icons/fi'
 
 export default function Main() {
   const courses = [{ icon: <GiOilPump/>, title: "کۆرسی هەڵکۆڵین", time: "٢٤:٣٥:٠٠", price: "٩٩٠٠٠" },
     { icon: <GiOilPump/>, title: "کۆرسی هەڵکۆڵین", time: "٢٤:٣٥:٠٠", price: "٩٩٠٠٠" },
     { icon: <GiOilPump/>, title: "کۆرسی هەڵکۆڵین", time: "٢٤:٣٥:٠٠", price: "٩٩٠٠٠" }];
 
+
+    function hidehefer(){
+      document.getElementById('header').classList.toggle('show-header')
+    }
+
     const books=[{urlImg:'/z.jpg' , title:'petroMk'},{urlImg:'/c.jpg' , title:'petroMk'},{urlImg:'/v.jpg' , title:'petroMk'}];
     const users=[{name:'سۆران غەفووری' , job:'ئەندازیاری نەوت' , witness:'ماستەری نەوتی زانکۆی تاران' ,honors:'نووسەری کتێبی نەوت لە کوێوە هاتوووه ' , now:'دامەزراوی پاڵاوگەی تیشک'}, 
     {name:'سۆران غەفووری' , job:'ئەندازیاری نەوت' , witness:'ماستەری نەوتی زانکۆی تاران' ,honors:'نووسەری کتێبی نەوت لە کوێوە هاتوووه ' , now:'دامەزراوی پاڵاوگەی تیشک'}, ];
   return (
     <div className="main-page">
+      <FiMenu className="main-page-menu" onClick={()=>hidehefer()}/>
       <div className="main-page1">
         <div className="main-page-left">
           <h1>ماڵپەڕی پەتڕۆماڵی کوردستان </h1>

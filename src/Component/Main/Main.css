@@ -154,7 +154,9 @@
     background-color: #CF4E1F;
     margin: 40px;
 }
-
+.main-page-menu{
+    display: none;
+}
 
 
 /* //////////////////////////////////////////////// */
@@ -195,4 +197,12 @@
         flex-direction: row;
         width: 100%;
     }
+    .main-page-menu{
+        display: block;
+        font-size: 2rem;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+    }
+
 }
