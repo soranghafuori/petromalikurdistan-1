@@ -3,11 +3,16 @@ import './Books.css'
 import Form from "react-bootstrap/Form";
 import { Button } from 'react-bootstrap';
 import BookCard from '../BookCard/BookCard';
+import {FiMenu} from 'react-icons/fi'
 
 export default function Books() {
   const books=[{urlImg:'/z.jpg' , title:'petroMk'},{urlImg:'/c.jpg' , title:'petroMk'},{urlImg:'/v.jpg' , title:'petroMk'},]
+  function hidehefer(){
+    document.getElementById('books').classList.toggle('show-header')
+  }
   return (
-    <div className="books">
+    <div className="books" id='books'>
+      <FiMenu className="main-page-menu" onClick={()=>hidehefer()}/>
       <div className="books-box">
         <div className="books-box-left">
           <h1>کتێبەکان</h1>

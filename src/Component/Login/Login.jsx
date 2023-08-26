@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { Button } from "react-bootstrap";
+import {FiMenu} from 'react-icons/fi'
+
 export default function Login() {
     const [login , setLogin] = useState(true)
-  
+    function hidehefer(){
+      document.getElementById('login').classList.toggle('show-header')
+    }
   return (
-    <div className="login">
+    <div className="login" id="login">
+      <FiMenu className="main-page-menu" onClick={()=>hidehefer()}/>
       <div className="login-box">
         <div className="login-box-right">
             {login ? <><input type="text" placeholder="ناو" />

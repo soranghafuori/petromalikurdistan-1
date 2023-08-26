@@ -1,8 +1,14 @@
 import React from 'react'
 import './About.css'
+import {FiMenu} from 'react-icons/fi'
+
 export default function About() {
+  function hidehefer(){
+    document.getElementById('about').classList.toggle('show-header')
+  }
   return (
-    <div className='about'>
+    <div className='about' id='about'>
+      <FiMenu className="main-page-menu" onClick={()=>hidehefer()}/>
       <div className='about-text'>
         <h1>ئێمە کێین؟</h1>
         <p>ئێمە تیمێکی کوردین بریتی لە چەندین زانای نەوت و زانای بواری سایت</p>
